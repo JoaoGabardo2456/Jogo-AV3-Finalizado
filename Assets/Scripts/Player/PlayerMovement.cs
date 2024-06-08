@@ -107,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
                         jumpCounter--;
                     }
                 }
+                
             }
 
             //Reset coyote counter to 0 to avoid double jumps

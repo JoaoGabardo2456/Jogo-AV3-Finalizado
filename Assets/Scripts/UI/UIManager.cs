@@ -44,6 +44,7 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+
     //Quit game/exit play mode if in Editor
     public void Quit()
     {
