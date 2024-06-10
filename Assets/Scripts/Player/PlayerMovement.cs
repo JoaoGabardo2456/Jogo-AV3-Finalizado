@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (onWall())
         {
-            body.gravityScale = 0;
+            body.gravityScale = 7;
             body.velocity = Vector2.zero;
         }
         else
@@ -117,8 +117,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void WallJump()
     {
-        body.AddForce(new Vector2(-Mathf.Sign(transform.localScale.x) * wallJumpX, wallJumpY));
-        wallJumpCooldown = 0;
+      body.AddForce(new Vector2(-Mathf.Sign(transform.localScale.x) * wallJumpX, wallJumpY));
+      wallJumpCooldown = 0;
     }
 
 
